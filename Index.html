@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div id="difficulty-box">
+        <label>Select Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <div id="game">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 60</div>
+        <div id="target" />
+
+        <div id="crosshair"></div>
+      </div>
+
+      <div id="popup">
+        <div id="popup-box">
+          <h2>Time's Up!</h2>
+          <p id="final-score">Your Score: 0</p>
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+   
+    <script src="game.js"></script>
+  </body>
+</html>

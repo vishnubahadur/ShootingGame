@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: none;
+    background: url('/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg') no-repeat center center fixed ;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    cursor:crosshair;
+}
+body::selection{
+    background: transparent;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#score, #timer {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+}
+
+#score { left: 20px; }
+#timer { right: 20px; }
+
+#target {
+  position: absolute;
+  /* background-color: red ; */
+  border-radius: 50%;
+  /* height: 10px;
+  width: 10px; */
+  background: radial-gradient(circle at 5px 5px, #5cabff, #000);
+  transition: all 0.5s ease;
+}
+
+
+/* Popup */
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-box {
+    width: 300px;
+    background:white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+#difficulty-box {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    color: white;
+    font-size: 20px;
+}
+#difficulty-box select {
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
